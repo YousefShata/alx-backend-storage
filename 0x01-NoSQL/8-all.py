@@ -8,6 +8,5 @@ import pymongo
 def list_all(mongo_collection):
     """
     list all document
-    """
-    for 
-    return [doc for doc in mongo_collection.list()]
+    """ 
+    return [doc for doc in mongo_collection.find()]
