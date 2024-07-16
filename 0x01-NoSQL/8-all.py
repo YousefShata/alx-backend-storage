@@ -9,5 +9,5 @@ def list_all(mongo_collection):
     """
     list all document
     """
-
-    return mongo_collection.list()
+    for 
+    return [doc for doc in mongo_collection.list()]
