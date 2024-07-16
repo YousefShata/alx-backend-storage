@@ -9,6 +9,7 @@ def log_stats(nginx_collection):
     """
     get nginx data
     """
+    log_count = nginx_collection.count_documents({})
     get_count = nginx_collection.count_documents({"method": "GET"})
     post_count = nginx_collection.count_documents({"method": "POST"})
     put_count = nginx_collection.count_documents({"method": "PUT"})
