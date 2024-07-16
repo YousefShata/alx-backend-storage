@@ -8,4 +8,4 @@ def update_topics(mongo_collection, name, topics):
     """
     isert document
     """
-    mongo_collection.update({"name": name}, {"$push": {"topics": topics}})
+    mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
