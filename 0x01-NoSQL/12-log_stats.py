@@ -26,4 +26,3 @@ print("\tmethod PATCH: {}".format(patch_count))
 print("\tmethod DELETE: {}".format(delete_count))
 print("{} status check".format(path))
 
-client.close()
