@@ -4,7 +4,7 @@ nginx stats model
 """
 from pymongo import MongoClient
 
-client = MongoClient('mongodb://127.0.0.1:27017')
+client = MongoClient('localhost',27017)
 nginx_collection = client.logs.nginx
 
 log_count = nginx_collection.count_documents({})
