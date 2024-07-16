@@ -10,12 +10,12 @@ nginx_collection = client.logs.nginx
 log_count = nginx_collection.count_documents({})
 
 get_count = nginx_collection.count_documents({"method": "GET"})
-post_count = nginx_collection.count_documents({{"method": "POST"}})
-put_count = nginx_collection.count_documents({{"method": "PUT"}})
-patch_count = nginx_collection.count_documents({{"method": "PATCH"}})
-delete_count = nginx_collection.count_documents({{"method": "DELETE"}})
+post_count = nginx_collection.count_documents({"method": "POST"})
+put_count = nginx_collection.count_documents({"method": "PUT"})
+patch_count = nginx_collection.count_documents({"method": "PATCH"})
+delete_count = nginx_collection.count_documents({"method": "DELETE"})
 
-path = nginx_collection.count_documents({"method": "GET"}, {"path": "/status"})
+path = nginx_collection.count_documents({"method": "GET", "path": "/status"})
 
 print("{} logs".format(log_count))
 print("Methods:")
