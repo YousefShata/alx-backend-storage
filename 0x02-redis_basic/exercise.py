@@ -10,7 +10,7 @@ class Cache:
     """
     cashe class
     """
-    
+
     def __init__(self):
         """
         Initialize the cache.
